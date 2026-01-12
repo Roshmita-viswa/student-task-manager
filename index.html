@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Student Task Manager</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>📘 Student Task Manager</h1>
+  <div class="container">
+    <h1>Student Task Manager</h1>
 
-        <input type="text" id="taskInput" placeholder="Enter your task">
-        <button onclick="addTask()">Add Task</button>
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter task">
 
-        <ul id="taskList"></ul>
+      <input type="date" id="dueDate">
+
+      <select id="priority">
+        <option value="Low">Low Priority</option>
+        <option value="Medium">Medium Priority</option>
+        <option value="High">High Priority</option>
+      </select>
+
+      <select id="category">
+        <option value="Study">Study</option>
+        <option value="Personal">Personal</option>
+        <option value="Exam">Exam</option>
+      </select>
+
+      <button onclick="addTask()">Add Task</button>
     </div>
 
-    <script src="script.js"></script>
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search tasks..."
+      onkeyup="searchTasks()"
+    >
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

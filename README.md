@@ -31,11 +31,13 @@ student-task-manager/
 This project is developed as a student mini-project to demonstrate basic web development concepts such as DOM manipulation, responsive design, and event handling using JavaScript.
 
 ## 🔮 Future Enhancements
-- Task search functionality
-- Local storage support
-- Due date and priority options
-- Task categorization
 
+- Priority-based visual indicators (color tags for High, Medium, Low)
+- Filter tasks by category and priority
+- Task completion statistics and progress tracking
+- Edit existing tasks
+- Dark mode / theme toggle
+- Cloud-based task synchronization
 ## 👩‍💻 Author
 Roshmita Viswanathan  
 GitHub: https://github.com/Roshmita-viswa
